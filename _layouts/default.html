@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b2933">
+  <title>{% if page.name == 'privacy-policy.md' %}Privacy Policy{% elsif page.name == 'dmca-terms.md' %}DMCA & Copyright Policy{% else %}Legal Policies{% endif %} — MAYSOFT</title>
+  <link rel="stylesheet" href="{{ '/assets/css/legal.css' | relative_url }}?v=20261018">
+</head>
+<body>
+  <a class="skip" href="#policy">Skip to policy</a>
+  <header>
+    <a class="brand" href="https://maysoftstudio.github.io/">MAYSOFT<span>LEGAL &amp; POLICIES</span></a>
+    <a class="back" href="https://maysoftstudio.github.io/">← <span lang="tr">Ana site</span> / Main site</a>
+  </header>
+  <main>
+    <aside aria-label="Legal navigation">
+      <p class="eyebrow">MAYSOFT / LEGAL</p>
+      <nav>
+        <a href="{{ '/privacy-policy.html' | relative_url }}" {% if page.name == 'privacy-policy.md' %}aria-current="page"{% endif %}><span lang="tr">Gizlilik politikası</span><small>Privacy policy</small></a>
+        <a href="{{ '/dmca-terms.html' | relative_url }}" {% if page.name == 'dmca-terms.md' %}aria-current="page"{% endif %}><span lang="tr">Telif hakkı politikası</span><small>DMCA &amp; copyright policy</small></a>
+        <a href="mailto:maysoft.support@gmail.com"><span lang="tr">İletişim</span><small>maysoft.support@gmail.com</small></a>
+      </nav>
+      <p class="note" lang="tr">Politika metinleri aşağıda İngilizce olarak sunulmaktadır.</p>
+    </aside>
+    <article id="policy" tabindex="-1">{{ content }}</article>
+  </main>
+  <footer><span>© 2026 MAYSOFT</span><a href="mailto:maysoft.support@gmail.com">maysoft.support@gmail.com</a></footer>
+</body>
+</html>

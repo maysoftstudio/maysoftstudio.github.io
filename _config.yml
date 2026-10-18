@@ -1,0 +1,10 @@
+title: MAYSOFT
+description: MAYSOFT legal policies
+url: https://maysoftstudio.github.io
+baseurl: ""
+markdown: kramdown
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
